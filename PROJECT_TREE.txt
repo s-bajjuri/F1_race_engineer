@@ -1,0 +1,108 @@
+f1_race_engineer_modular/
+├── archive/
+│   ├── __pycache__/
+│   │   ├── phase2_complete_monolith.cpython-313.pyc
+│   │   └── phase2d_analysis_dashboard.cpython-313.pyc
+│   ├── phase2_complete_monolith.py
+│   └── phase2d_analysis_dashboard.py
+├── data/
+│   └── README.md
+├── f1_engineer/
+│   ├── __pycache__/
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── app.cpython-313.pyc
+│   │   ├── config.cpython-313.pyc
+│   │   ├── formatting.cpython-313.pyc
+│   │   ├── health.cpython-313.pyc
+│   │   ├── models.cpython-313.pyc
+│   │   └── runtime.cpython-313.pyc
+│   ├── analysis/
+│   │   ├── __pycache__/
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── catalog.cpython-313.pyc
+│   │   │   ├── pipeline.cpython-313.pyc
+│   │   │   └── validation.cpython-313.pyc
+│   │   ├── __init__.py
+│   │   ├── catalog.py
+│   │   ├── pipeline.py
+│   │   └── validation.py
+│   ├── comparison/
+│   │   ├── __pycache__/
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   └── manager.cpython-313.pyc
+│   │   ├── __init__.py
+│   │   └── manager.py
+│   ├── core/
+│   │   ├── __pycache__/
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   └── telemetry_buffer.cpython-313.pyc
+│   │   ├── __init__.py
+│   │   └── telemetry_buffer.py
+│   ├── recording/
+│   │   ├── __pycache__/
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── recorder.cpython-313.pyc
+│   │   │   └── writer.cpython-313.pyc
+│   │   ├── __init__.py
+│   │   ├── recorder.py
+│   │   └── writer.py
+│   ├── telemetry/
+│   │   ├── __pycache__/
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── packets.cpython-313.pyc
+│   │   │   └── receiver.cpython-313.pyc
+│   │   ├── __init__.py
+│   │   ├── packets.py
+│   │   └── receiver.py
+│   ├── ui/
+│   │   ├── __pycache__/
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── analysis_view.cpython-313.pyc
+│   │   │   ├── dashboard.cpython-313.pyc
+│   │   │   ├── diagnostics_view.cpython-313.pyc
+│   │   │   ├── drive_overlay.cpython-313.pyc
+│   │   │   ├── drive_view.cpython-313.pyc
+│   │   │   ├── theme.cpython-313.pyc
+│   │   │   └── view_state.cpython-313.pyc
+│   │   ├── __init__.py
+│   │   ├── analysis_view.py
+│   │   ├── dashboard.py
+│   │   ├── diagnostics_view.py
+│   │   ├── drive_overlay.py
+│   │   ├── drive_view.py
+│   │   ├── theme.py
+│   │   └── view_state.py
+│   ├── __init__.py
+│   ├── app.py
+│   ├── config.py
+│   ├── formatting.py
+│   ├── health.py
+│   ├── models.py
+│   └── runtime.py
+├── tests/
+│   ├── __pycache__/
+│   │   ├── test_comparison.cpython-313.pyc
+│   │   ├── test_config.cpython-313.pyc
+│   │   ├── test_lap_catalog.cpython-313.pyc
+│   │   ├── test_lap_validation.cpython-313.pyc
+│   │   ├── test_protocol.cpython-313.pyc
+│   │   └── test_ui_imports.cpython-313.pyc
+│   ├── test_comparison.py
+│   ├── test_config.py
+│   ├── test_lap_catalog.py
+│   ├── test_lap_validation.py
+│   ├── test_protocol.py
+│   └── test_ui_imports.py
+├── tools/
+│   ├── __pycache__/
+│   │   └── analyze_laps.cpython-313.pyc
+│   └── analyze_laps.py
+├── .gitignore
+├── config.yaml
+├── main.py
+├── MIGRATION.md
+├── OVERLAY_INSTALL.md
+├── PHASE3A.md
+├── README.md
+├── requirements.txt
+└── UI_UPDATE.md

@@ -1,0 +1,56 @@
+PERSONAL STYLE ENVELOPE
+=======================
+Corner rows:        1336
+Tracks:             4
+Bands:              ['tight', 'medium', 'fast']
+
+Question: was that a normal way for YOU to do it — not what the corner
+demands. Built from every track, keyed only on a coarse corner band, so
+it applies to a circuit that has never been driven.
+
+TRANSFER TO AN UNSEEN TRACK (leave one track out)
+------------------------------------------------------------------------------
+A calibration test. If the envelope carries, a held-out track sits near
+centre 0.0 and spread 1.0, putting about 68% inside 1 sigma and 95%
+inside 2. oracle = the same test with the envelope fitted on that very
+track, which is the best any envelope could do.
+
+target                              corner%  centre  spread   <2sd  oracle  flag%   worst   pass
+brake_build_rate_per_s                 33%    0.00    0.98    97%     96%     3%     4.0    4/4
+steering_correction_count              68%   -0.06    1.04    97%     97%     3%     4.0    4/4
+throttle_brake_overlap_s               15%    0.05    1.05    86%     84%    14%    26.6    4/4
+steering_rate_std_per_s                66%    0.07    0.99    90%     91%    10%    10.3    3/4
+brake_release_smoothness_per_s         31%    0.16    0.97    87%     91%    13%     6.9    3/4
+rear_slip_bias                         45%   -0.00    0.98    86%     88%    14%    18.8    3/4
+minimum_speed_offset_from_apex_m       74%    0.06    1.06    85%     93%    15%     9.5    3/4
+trail_brake_past_entry_m               64%    0.03    1.04    86%     89%    14%    11.4    2/4
+peak_rear_slip_abs                     23%    0.31    1.23    80%     90%    20%    57.5    2/4
+coast_distance_m                       45%    0.00    0.87    95%     95%     5%    19.3    1/4
+
+pass = how many held-out tracks landed within centre +-0.5 and spread 0.7-1.4.
+flag% = share of corners a 2-sigma alert would fire on; worst = the largest deviation seen.
+A worst far above 3 means the tail is heavier than a normal distribution, so sigma
+overstates how unusual the extremes really are.
+
+3 of 10 descriptors transfer on every held-out track.
+Usable on lap 1 of an unseen circuit:
+  - brake_build_rate_per_s             fires on 3% of corners
+  - steering_correction_count          fires on 3% of corners
+  - throttle_brake_overlap_s           fires on 14% of corners
+
+Transfer on most but not all tracks; usable with more data:
+  - steering_rate_std_per_s            3/4 tracks
+  - brake_release_smoothness_per_s     3/4 tracks
+  - rear_slip_bias                     3/4 tracks
+  - minimum_speed_offset_from_apex_m   3/4 tracks
+  - trail_brake_past_entry_m           2/4 tracks
+  - peak_rear_slip_abs                 2/4 tracks
+
+WORKED EXAMPLE — deviations on one lap
+------------------------------------------------------------------------------
+  lap_20260822_135841_936_valid — using only the 3 descriptors that transfer:
+  suzuka:1 (right, medium): more throttle and brake overlap than your normal [+2.0 sigma]
+  suzuka:14 (left, fast): more steering corrections than your normal [+2.0 sigma]
+
+Envelope: data\style_envelope\style_envelope.json
+Outputs:  data\style_envelope

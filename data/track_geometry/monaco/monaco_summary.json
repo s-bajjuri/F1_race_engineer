@@ -1,0 +1,28 @@
+{
+  "track": "monaco",
+  "track_length_m": 3323.04296875,
+  "grid_points": 1662,
+  "grid_spacing_m": 1.9994241689229844,
+  "laps_available": 3,
+  "laps_used": 3,
+  "laps_used_ids": [
+    "lap_20260809_170135_960_valid",
+    "lap_20260809_170411_355_invalid",
+    "lap_20260809_170528_851_invalid"
+  ],
+  "laps_rejected_low_coverage": [],
+  "corner_count": 20,
+  "left_corners": 8,
+  "right_corners": 12,
+  "curvature_sign_convention": "positive_is_left",
+  "curvature_sign_source": "steering",
+  "mean_heading_vs_yaw_deg": 1.330151879138393,
+  "config": {
+    "grid_spacing_m": 2.0,
+    "path_smoothing_m": 12.0,
+    "heading_smoothing_m": 20.0,
+    "corner_minimum_radius_m": 400.0,
+    "minimum_corner_length_m": 25.0,
+    "corner_merge_gap_m": 20.0
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "catalog_path": "data\\processed\\lap_catalog.csv",
+  "output_root": "data\\processed",
+  "eligibility": "core_eligible",
+  "include_outliers": false,
+  "selected_laps": 11,
+  "processed_laps": 11,
+  "failed_laps": 0,
+  "detected_segments": 74,
+  "segment_feature_rows": 74,
+  "style_feature_rows": 11,
+  "complete_style_feature_rows": 11,
+  "grid_points": 2001,
+  "parameters": {
+    "brake_threshold": 0.3,
+    "minimum_brake_duration_s": 0.5,
+    "merge_gap_s": 0.2,
+    "full_throttle_threshold": 0.95,
+    "slip_threshold": 0.05,
+    "quality_zone_gap_m": 150.0,
+    "quality_canonical_zone_min_support": 0.5
+  },
+  "processing_catalog": "data\\processed\\segment_processing.csv",
+  "segments_catalog": "data\\processed\\braking_segments.csv",
+  "resampled_directory": "data\\processed\\resampled",
+  "plot_directory": "data\\processed\\segment_plots",
+  "segment_features_csv": "data\\processed\\segment_features.csv",
+  "segment_features_parquet": "data\\processed\\segment_features.parquet",
+  "style_features_csv": "data\\processed\\style_features.csv",
+  "style_features_parquet": "data\\processed\\style_features.parquet",
+  "quality": {
+    "style_rows": 11,
+    "segment_rows": 74,
+    "technically_complete_style_rows": 11,
+    "style_model_ready_rows": 9,
+    "clean_baseline_candidate_rows": 8,
+    "full_context_model_ready_rows": 0,
+    "standing_start_or_stationary_rows": 0,
+    "rare_segment_rows": 1,
+    "canonical_zone_count": 6,
+    "rare_zone_count": 1,
+    "context_profiles": {
+      "static_strategy_context": 11
+    },
+    "top_descriptive_correlations": [
+      {
+        "feature": "mean_speed_kmh",
+        "correlation_with_lap_time": -0.9040893735812401,
+        "correlation_rows": 11
+      },
+      {
+        "feature": "coast_time_pct",
+        "correlation_with_lap_time": 0.7941624255280623,
+        "correlation_rows": 11
+      },
+      {
+        "feature": "peak_rear_slip_abs",
+        "correlation_with_lap_time": 0.7699335241807331,
+        "correlation_rows": 11
+      },
+      {
+        "feature": "minimum_speed_kmh",
+        "correlation_with_lap_time": -0.5834691537635497,
+        "correlation_rows": 11
+      },
+      {
+        "feature": "mean_abs_longitudinal_g",
+        "correlation_with_lap_time": 0.579995816922426,
+        "correlation_rows": 11
+      },
+      {
+        "feature": "mean_abs_lateral_g",
+        "correlation_with_lap_time": -0.5700952967028665,
+        "correlation_rows": 11
+      }
+    ],
+    "parameters": {
+      "zone_gap_m": 150.0,
+      "canonical_zone_min_support": 0.5,
+      "stationary_speed_threshold_kmh": 20.0
+    },
+    "validated_segment_features_csv": "data\\processed\\segment_features_validated.csv",
+    "validated_style_features_csv": "data\\processed\\style_features_validated.csv",
+    "feature_quality_csv": "data\\processed\\feature_quality.csv",
+    "braking_zone_quality_csv": "data\\processed\\braking_zone_quality.csv",
+    "validated_segment_features_parquet": "data\\processed\\segment_features_validated.parquet",
+    "validated_style_features_parquet": "data\\processed\\style_features_validated.parquet",
+    "feature_quality_report_json": "data\\processed\\feature_quality_report.json",
+    "feature_quality_report_markdown": "data\\processed\\feature_quality_report.md"
+  }
+}

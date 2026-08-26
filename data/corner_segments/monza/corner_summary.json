@@ -1,0 +1,11 @@
+{
+  "track": "monza",
+  "corners": 13,
+  "laps_selected": 33,
+  "laps_failed": 0,
+  "corner_rows": 429,
+  "behavior_complete_rows": 429,
+  "braking_complete_rows": 214,
+  "rows_with_braking": 215,
+  "failures": []
+}

@@ -1,0 +1,115 @@
+PHASE 4A — GEOMETRY CONTEXT k-NN
+=================================
+Corner rows:        1336
+Tracks:             4
+Sessions:           21
+Neighbours:         10
+
+PRIOR QUALITY ON AN UNSEEN TRACK — primary targets
+------------------------------------------------------------------------------
+Skill = fraction of the no-geometry baseline's error removed; 0 means no better.
+raw = geometry predicts behaviour directly.  norm@n = geometry predicts within-track
+deviation, with level and spread taken from n practice laps (4B). Neither sees
+the practice laps as neighbours.
+
+target                                  raw   norm@0   norm@1   norm@3   norm@5
+mean_abs_lateral_g                     0.07    -0.02     0.01     0.01     0.00
+minimum_speed_kmh                      0.28     0.09     0.05     0.06     0.06
+minimum_speed_offset_from_apex_m      -0.04    -0.12    -0.15    -0.08    -0.10
+peak_abs_steering                      0.29     0.27     0.24     0.25     0.25
+steering_rate_std_per_s                0.22     0.16     0.12     0.15     0.14
+
+FULL MODEL — primary targets
+------------------------------------------------------------------------------
+own = your own laps at that corner.  4A = raw prior blended in.  4B = normalised.
+
+target                                 own@1    4A@1    4B@1   own@3    4A@3    4B@3   own@5    4A@5    4B@5
+mean_abs_lateral_g                      0.73    0.73    0.73    0.77    0.77    0.77    0.78    0.78    0.78
+minimum_speed_kmh                       0.84    0.84    0.84    0.85    0.85    0.85    0.86    0.86    0.86
+minimum_speed_offset_from_apex_m        0.44    0.44    0.44    0.54    0.54    0.54    0.56    0.56    0.56
+peak_abs_steering                       0.58    0.58    0.58    0.64    0.64    0.64    0.66    0.66    0.66
+steering_rate_std_per_s                 0.29    0.34    0.31    0.41    0.42    0.41    0.44    0.44    0.44
+
+Best weight for the geometric prior, swept per target (0 = the prior earns no weight once you have own laps):
+  target                                best prior   4A gain   4B gain
+  mean_abs_lateral_g                          0.00      0.0%      0.0%
+  minimum_speed_kmh                           0.00      0.0%      0.0%
+  minimum_speed_offset_from_apex_m            0.00      0.0%      0.0%
+  peak_abs_steering                           0.00      0.0%      0.0%
+  steering_rate_std_per_s                     0.25      3.1%      1.1%
+
+PRIOR QUALITY ON AN UNSEEN TRACK — braking targets
+------------------------------------------------------------------------------
+Skill = fraction of the no-geometry baseline's error removed; 0 means no better.
+raw = geometry predicts behaviour directly.  norm@n = geometry predicts within-track
+deviation, with level and spread taken from n practice laps (4B). Neither sees
+the practice laps as neighbours.
+
+target                                  raw   norm@0   norm@1   norm@3   norm@5
+brake_application_before_entry_m       0.09     0.05     0.09     0.10     0.09
+brake_release_smoothness_per_s        -0.12    -0.07    -0.06    -0.10    -0.11
+entry_speed_kmh                        0.13     0.11    -0.08    -0.10    -0.10
+peak_brake                             0.20     0.23     0.23     0.22     0.19
+speed_loss_kmh                         0.24     0.23     0.12     0.17     0.16
+trail_brake_past_entry_m              -0.31    -0.25    -0.34    -0.24    -0.24
+
+FULL MODEL — braking targets
+------------------------------------------------------------------------------
+own = your own laps at that corner.  4A = raw prior blended in.  4B = normalised.
+
+target                                 own@1    4A@1    4B@1   own@3    4A@3    4B@3   own@5    4A@5    4B@5
+brake_application_before_entry_m        0.65    0.70    0.67    0.70    0.74    0.71    0.74    0.76    0.75
+brake_release_smoothness_per_s         -0.10   -0.02    0.00    0.08    0.07    0.09    0.13    0.11    0.14
+entry_speed_kmh                         0.73    0.78    0.59    0.77    0.80    0.73    0.80    0.82    0.75
+peak_brake                              0.38    0.46    0.41    0.47    0.50    0.48    0.53    0.54    0.53
+speed_loss_kmh                          0.67    0.73    0.73    0.74    0.79    0.77    0.77    0.80    0.79
+trail_brake_past_entry_m                0.03    0.05    0.02    0.20    0.21    0.19    0.23    0.23    0.22
+
+Best weight for the geometric prior, swept per target (0 = the prior earns no weight once you have own laps):
+  target                                best prior   4A gain   4B gain
+  brake_application_before_entry_m            0.00     11.5%      4.3%
+  brake_release_smoothness_per_s              0.50      1.2%      3.6%
+  entry_speed_kmh                             0.00     15.1%    -41.6%
+  peak_brake                                  0.00      8.1%      2.8%
+  speed_loss_kmh                              0.00     18.4%     13.0%
+  trail_brake_past_entry_m                    0.25      1.1%     -0.8%
+
+DOES MORE TRACK VARIETY HELP? — primary targets
+------------------------------------------------------------------------------
+Zero-shot skill against the number of tracks the prior was trained on. Rising means
+collecting more tracks will help; flat means the method has to change instead.
+
+target                                 1 track  2 tracks  3 tracks
+mean_abs_lateral_g                        0.00      0.03      0.07
+minimum_speed_kmh                         0.21      0.24      0.28
+minimum_speed_offset_from_apex_m         -0.21     -0.15     -0.04
+peak_abs_steering                         0.14      0.27      0.29
+steering_rate_std_per_s                   0.17      0.20      0.22
+
+Mean skill: 0.06 at 1 track to 0.16 at 3.
+
+DOES MORE TRACK VARIETY HELP? — braking targets
+------------------------------------------------------------------------------
+Zero-shot skill against the number of tracks the prior was trained on. Rising means
+collecting more tracks will help; flat means the method has to change instead.
+
+target                                 1 track  2 tracks  3 tracks
+brake_application_before_entry_m          0.05      0.12      0.09
+brake_release_smoothness_per_s           -0.04     -0.12     -0.12
+entry_speed_kmh                           0.19      0.18      0.13
+peak_brake                                0.18      0.13      0.20
+speed_loss_kmh                            0.01      0.19      0.24
+trail_brake_past_entry_m                 -0.15     -0.26     -0.31
+
+Mean skill: 0.04 at 1 track to 0.04 at 3.
+
+KNOWN TRACK (held out by session) — primary targets
+----------------------------------------------------------------------
+target                                       MAE   baseline   skill
+mean_abs_lateral_g                         0.107      0.405    0.74
+minimum_speed_kmh                          8.638     61.550    0.86
+minimum_speed_offset_from_apex_m          13.886     28.721    0.50
+peak_abs_steering                          0.060      0.194    0.69
+steering_rate_std_per_s                    0.088      0.151    0.42
+
+Outputs: data\phase4

@@ -1,0 +1,51 @@
+{
+  "phase": "3F",
+  "context_version": "causal_proxy_v1",
+  "context_lookback_seconds": 0.75,
+  "modeling_segment_rows": 74,
+  "context_complete_rows": 74,
+  "knn_v1_candidate_rows": 34,
+  "session_uid_rows": 74,
+  "session_count": 2,
+  "track_count": 1,
+  "context_features": [
+    "approach_speed_kmh",
+    "approach_speed_delta_kmh",
+    "approach_throttle_mean",
+    "approach_abs_steering_mean",
+    "approach_abs_steering_max",
+    "approach_mean_abs_lateral_g",
+    "approach_mean_abs_longitudinal_g",
+    "approach_curvature_proxy_signed_mean_1pm",
+    "approach_curvature_proxy_abs_mean_1pm"
+  ],
+  "core_behavior_targets": [
+    "peak_brake",
+    "mean_brake",
+    "brake_release_smoothness_per_s",
+    "braking_distance_m",
+    "speed_loss_kmh",
+    "minimum_speed_kmh",
+    "full_throttle_distance_from_min_speed_m",
+    "full_throttle_delay_from_min_speed_s",
+    "steering_input_std",
+    "steering_rate_std_per_s",
+    "throttle_brake_overlap_ms"
+  ],
+  "motion_behavior_targets": [
+    "slip_frequency",
+    "peak_front_slip_abs",
+    "peak_rear_slip_abs",
+    "mean_front_slip_abs",
+    "mean_rear_slip_abs",
+    "rear_slip_bias",
+    "mean_abs_lateral_g",
+    "peak_abs_lateral_g",
+    "mean_abs_longitudinal_g"
+  ],
+  "cross_track_geometry_status": "not_required_for_phase3f; causal_proxy_v1 only",
+  "session_split_rule": "group by session_key; never random lap-level leakage",
+  "maneuver_taxonomy": "deferred; continuous descriptors only",
+  "modeling_segments_csv": "data\\processed\\modeling_segments.csv",
+  "modeling_sessions_csv": "data\\processed\\modeling_sessions.csv"
+}

@@ -1,0 +1,36 @@
+{
+  "data_root": "data\\raw_laps",
+  "catalog_path": "data\\corner_segments\\suzuka\\lap_catalog.csv",
+  "track_filter": "suzuka",
+  "files_found": 15,
+  "readable_files": 15,
+  "valid_laps": 14,
+  "complete_laps": 15,
+  "core_eligible_laps": 14,
+  "training_eligible_laps": 14,
+  "outlier_laps": 0,
+  "configuration": {
+    "expected_sample_rate_hz": 60.0,
+    "sample_rate_tolerance_hz": 7.0,
+    "minimum_rows": 1000,
+    "start_distance_pct_max": 0.03,
+    "end_distance_pct_min": 0.97,
+    "minimum_distance_coverage_pct": 0.94,
+    "distance_backtrack_tolerance_pct": 0.002,
+    "maximum_model_null_fraction": 0.0,
+    "require_enrichment_for_training": true,
+    "maximum_timestamp_backsteps": 3,
+    "maximum_timestamp_backstep_ms": 34.0,
+    "outlier_factor": 1.2
+  },
+  "by_track": {
+    "suzuka": {
+      "files": 15,
+      "readable": 15,
+      "valid": 14,
+      "complete": 15,
+      "core_eligible": 14,
+      "training_eligible": 14
+    }
+  }
+}

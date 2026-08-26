@@ -1,0 +1,34 @@
+{
+  "data_root": "data\\raw_laps",
+  "catalog_path": "data\\processed\\lap_catalog.csv",
+  "track_filter": "monaco",
+  "files_found": 17,
+  "readable_files": 17,
+  "valid_laps": 14,
+  "complete_laps": 15,
+  "core_eligible_laps": 11,
+  "training_eligible_laps": 11,
+  "outlier_laps": 0,
+  "configuration": {
+    "expected_sample_rate_hz": 60.0,
+    "sample_rate_tolerance_hz": 7.0,
+    "minimum_rows": 1000,
+    "start_distance_pct_max": 0.03,
+    "end_distance_pct_min": 0.97,
+    "minimum_distance_coverage_pct": 0.94,
+    "distance_backtrack_tolerance_pct": 0.002,
+    "maximum_model_null_fraction": 0.0,
+    "require_enrichment_for_training": true,
+    "outlier_factor": 1.2
+  },
+  "by_track": {
+    "monaco": {
+      "files": 17,
+      "readable": 17,
+      "valid": 14,
+      "complete": 15,
+      "core_eligible": 11,
+      "training_eligible": 11
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "targets": [
+    "brake_release_smoothness_per_s",
+    "brake_build_rate_per_s",
+    "steering_rate_std_per_s",
+    "steering_correction_count",
+    "trail_brake_past_entry_m",
+    "throttle_brake_overlap_s",
+    "coast_distance_m",
+    "minimum_speed_offset_from_apex_m",
+    "peak_rear_slip_abs",
+    "rear_slip_bias"
+  ],
+  "band_edges": [
+    60.0,
+    150.0
+  ],
+  "band_names": [
+    "tight",
+    "medium",
+    "fast"
+  ],
+  "deviation_threshold": 2.0,
+  "bands": [
+    {
+      "target": "brake_build_rate_per_s",
+      "band": "medium",
+      "centre": 3.3154603707275774,
+      "spread": 1.7053616870747887,
+      "rows": 292
+    },
+    {
+      "target": "brake_build_rate_per_s",
+      "band": "tight",
+      "centre": 2.800366820034334,
+      "spread": 1.9877960372549122,
+      "rows": 274
+    },
+    {
+      "target": "brake_release_smoothness_per_s",
+      "band": "medium",
+      "centre": 1.1756748847719165,
+      "spread": 0.5919239766488793,
+      "rows": 294
+    },
+    {
+      "target": "brake_release_smoothness_per_s",
+      "band": "tight",
+      "centre": 0.8716059230568376,
+      "spread": 0.418657812757154,
+      "rows": 286
+    },
+    {
+      "target": "coast_distance_m",
+      "band": "fast",
+      "centre": 0.0,
+      "spread": 1.9712627987290001,
+      "rows": 303
+    },
+    {
+      "target": "coast_distance_m",
+      "band": "medium",
+      "centre": 0.0,
+      "spread": 6.919523990544467,
+      "rows": 592
+    },
+    {
+      "target": "coast_distance_m",
+      "band": "tight",
+      "centre": 8.59765625,
+      "spread": 12.746885156249999,
+      "rows": 421
+    },
+    {
+      "target": "minimum_speed_offset_from_apex_m",
+      "band": "fast",
+      "centre": -23.022495297408568,
+      "spread": 20.038245132687152,
+      "rows": 303
+    },
+    {
+      "target": "minimum_speed_offset_from_apex_m",
+      "band": "medium",
+      "centre": -9.238352222532967,
+      "spread": 47.41115098774001,
+      "rows": 592
+    },
+    {
+      "target": "minimum_speed_offset_from_apex_m",
+      "band": "tight",
+      "centre": 6.199507103742803,
+      "spread": 9.863899730937488,
+      "rows": 421
+    },
+    {
+      "target": "peak_rear_slip_abs",
+      "band": "fast",
+      "centre": 0.029093222692608833,
+      "spread": 0.011679969622939825,
+      "rows": 303
+    },
+    {
+      "target": "peak_rear_slip_abs",
+      "band": "medium",
+      "centre": 0.07667100429534912,
+      "spread": 0.02435531510263681,
+      "rows": 592
+    },
+    {
+      "target": "peak_rear_slip_abs",
+      "band": "tight",
+      "centre": 0.16350004076957703,
+      "spread": 0.07290924347788096,
+      "rows": 421
+    },
+    {
+      "target": "rear_slip_bias",
+      "band": "fast",
+      "centre": 0.016417709881525844,
+      "spread": 0.003656224385276921,
+      "rows": 303
+    },
+    {
+      "target": "rear_slip_bias",
+      "band": "medium",
+      "centre": 0.022491032493725034,
+      "spread": 0.006294613848418457,
+      "rows": 592
+    },
+    {
+      "target": "rear_slip_bias",
+      "band": "tight",
+      "centre": 0.028387120436005712,
+      "spread": 0.013853605421602355,
+      "rows": 421
+    },
+    {
+      "target": "steering_correction_count",
+      "band": "fast",
+      "centre": 1.0,
+      "spread": 1.4826,
+      "rows": 303
+    },
+    {
+      "target": "steering_correction_count",
+      "band": "medium",
+      "centre": 6.0,
+      "spread": 4.4478,
+      "rows": 592
+    },
+    {
+      "target": "steering_correction_count",
+      "band": "tight",
+      "centre": 9.0,
+      "spread": 8.8956,
+      "rows": 421
+    },
+    {
+      "target": "steering_rate_std_per_s",
+      "band": "fast",
+      "centre": 0.08133838111847858,
+      "spread": 0.04214592540963734,
+      "rows": 303
+    },
+    {
+      "target": "steering_rate_std_per_s",
+      "band": "medium",
+      "centre": 0.2639121044273339,
+      "spread": 0.12462889855375472,
+      "rows": 592
+    },
+    {
+      "target": "steering_rate_std_per_s",
+      "band": "tight",
+      "centre": 0.39415400917027416,
+      "spread": 0.18327936910346782,
+      "rows": 421
+    },
+    {
+      "target": "throttle_brake_overlap_s",
+      "band": "medium",
+      "centre": 0.16699999999999804,
+      "spread": 0.1467774000000082,
+      "rows": 294
+    },
+    {
+      "target": "throttle_brake_overlap_s",
+      "band": "tight",
+      "centre": 0.08299999999999907,
+      "spread": 0.09859289999999671,
+      "rows": 286
+    },
+    {
+      "target": "trail_brake_past_entry_m",
+      "band": "medium",
+      "centre": 37.95428989433617,
+      "spread": 14.589699382264824,
+      "rows": 294
+    },
+    {
+      "target": "trail_brake_past_entry_m",
+      "band": "tight",
+      "centre": 33.73648342895157,
+      "spread": 12.12895033432361,
+      "rows": 286
+    }
+  ],
+  "global": [
+    {
+      "target": "brake_build_rate_per_s",
+      "centre": 3.0314716352141415,
+      "spread": 1.827161645102919,
+      "rows": 566
+    },
+    {
+      "target": "brake_release_smoothness_per_s",
+      "centre": 1.0332402637767815,
+      "spread": 0.5064418896605735,
+      "rows": 580
+    },
+    {
+      "target": "coast_distance_m",
+      "centre": 0.0,
+      "spread": 9.438415935500213,
+      "rows": 1316
+    },
+    {
+      "target": "minimum_speed_offset_from_apex_m",
+      "centre": -3.08354361579552,
+      "spread": 30.563765007300127,
+      "rows": 1316
+    },
+    {
+      "target": "peak_rear_slip_abs",
+      "centre": 0.08663184195756912,
+      "spread": 0.057717748886346815,
+      "rows": 1316
+    },
+    {
+      "target": "rear_slip_bias",
+      "centre": 0.022340758128155357,
+      "spread": 0.009384951522121621,
+      "rows": 1316
+    },
+    {
+      "target": "steering_correction_count",
+      "centre": 4.0,
+      "spread": 4.4478,
+      "rows": 1316
+    },
+    {
+      "target": "steering_rate_std_per_s",
+      "centre": 0.25928759818300445,
+      "spread": 0.18106954752533488,
+      "rows": 1316
+    },
+    {
+      "target": "throttle_brake_overlap_s",
+      "centre": 0.11699999999999733,
+      "spread": 0.09933420000000025,
+      "rows": 580
+    },
+    {
+      "target": "trail_brake_past_entry_m",
+      "centre": 35.874864593723146,
+      "spread": 14.063521097021182,
+      "rows": 580
+    }
+  ]
+}

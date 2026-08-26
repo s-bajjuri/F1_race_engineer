@@ -1,0 +1,31 @@
+{
+  "track": "spa",
+  "track_length_m": 7007.0283203125,
+  "grid_points": 3504,
+  "grid_spacing_m": 1.9997226941531108,
+  "laps_available": 6,
+  "laps_used": 6,
+  "laps_used_ids": [
+    "lap_20260820_133251_602_invalid",
+    "lap_20260820_133935_850_invalid",
+    "lap_20260820_134156_659_invalid",
+    "lap_20260820_134415_801_invalid",
+    "lap_20260820_134904_319_valid",
+    "lap_20260820_140949_779_valid"
+  ],
+  "laps_rejected_low_coverage": [],
+  "corner_count": 20,
+  "left_corners": 10,
+  "right_corners": 10,
+  "curvature_sign_convention": "positive_is_left",
+  "curvature_sign_source": "steering",
+  "mean_heading_vs_yaw_deg": 1.040357506892175,
+  "config": {
+    "grid_spacing_m": 2.0,
+    "path_smoothing_m": 12.0,
+    "heading_smoothing_m": 20.0,
+    "corner_minimum_radius_m": 400.0,
+    "minimum_corner_length_m": 25.0,
+    "corner_merge_gap_m": 20.0
+  }
+}

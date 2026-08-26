@@ -1,0 +1,40 @@
+{
+  "track": "suzuka",
+  "track_length_m": 5809.2578125,
+  "grid_points": 2905,
+  "grid_spacing_m": 1.9997445137693632,
+  "laps_available": 15,
+  "laps_used": 15,
+  "laps_used_ids": [
+    "lap_20260822_130127_873_valid",
+    "lap_20260822_130542_023_valid",
+    "lap_20260822_130714_508_valid",
+    "lap_20260822_130919_912_invalid",
+    "lap_20260822_133242_569_valid",
+    "lap_20260822_133545_237_valid",
+    "lap_20260822_133806_966_valid",
+    "lap_20260822_134200_605_valid",
+    "lap_20260822_135013_977_valid",
+    "lap_20260822_135146_513_valid",
+    "lap_20260822_135710_144_valid",
+    "lap_20260822_135841_936_valid",
+    "lap_20260822_143501_079_valid",
+    "lap_20260822_143632_592_valid",
+    "lap_20260822_144251_925_valid"
+  ],
+  "laps_rejected_low_coverage": [],
+  "corner_count": 18,
+  "left_corners": 9,
+  "right_corners": 9,
+  "curvature_sign_convention": "positive_is_left",
+  "curvature_sign_source": "steering",
+  "mean_heading_vs_yaw_deg": 1.006207022440114,
+  "config": {
+    "grid_spacing_m": 2.0,
+    "path_smoothing_m": 12.0,
+    "heading_smoothing_m": 20.0,
+    "corner_minimum_radius_m": 400.0,
+    "minimum_corner_length_m": 25.0,
+    "corner_merge_gap_m": 20.0
+  }
+}

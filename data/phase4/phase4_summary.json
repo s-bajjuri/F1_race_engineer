@@ -1,0 +1,16 @@
+{
+  "rows": 1336,
+  "tracks": 4,
+  "sessions": 21,
+  "neighbours": 10,
+  "shots": [
+    0,
+    1,
+    3,
+    5
+  ],
+  "repeats": 4,
+  "output_root": "data\\phase4",
+  "adaptation_plot_primary": "data\\phase4\\adaptation_primary.png",
+  "adaptation_plot_braking": "data\\phase4\\adaptation_braking.png"
+}

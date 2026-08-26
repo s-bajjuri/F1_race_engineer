@@ -1,0 +1,33 @@
+{
+  "rows": 1336,
+  "tracks": 4,
+  "bands": [
+    "tight",
+    "medium",
+    "fast"
+  ],
+  "band_edges": [
+    60.0,
+    150.0
+  ],
+  "deviation_threshold": 2.0,
+  "targets": [
+    "brake_release_smoothness_per_s",
+    "brake_build_rate_per_s",
+    "steering_rate_std_per_s",
+    "steering_correction_count",
+    "trail_brake_past_entry_m",
+    "throttle_brake_overlap_s",
+    "coast_distance_m",
+    "minimum_speed_offset_from_apex_m",
+    "peak_rear_slip_abs",
+    "rear_slip_bias"
+  ],
+  "transferring_targets": [
+    "brake_build_rate_per_s",
+    "steering_correction_count",
+    "throttle_brake_overlap_s"
+  ],
+  "envelope_path": "data\\style_envelope\\style_envelope.json",
+  "output_root": "data\\style_envelope"
+}

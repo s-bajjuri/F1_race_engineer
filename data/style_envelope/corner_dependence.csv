@@ -1,0 +1,11 @@
+target,rows,corner_share
+brake_release_smoothness_per_s,580,0.3107275363761387
+brake_build_rate_per_s,566,0.33071501905090517
+steering_rate_std_per_s,1316,0.6618046675452831
+steering_correction_count,1316,0.6845570786310813
+trail_brake_past_entry_m,580,0.6406917438632251
+throttle_brake_overlap_s,580,0.14629674759945444
+coast_distance_m,1316,0.44573537202250235
+minimum_speed_offset_from_apex_m,1316,0.7433305264336082
+peak_rear_slip_abs,1316,0.23134187442209952
+rear_slip_bias,1316,0.4508489325952394

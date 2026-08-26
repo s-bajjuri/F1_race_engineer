@@ -1,0 +1,52 @@
+app:
+  track: "spa"
+
+udp:
+  host: "0.0.0.0"
+  port: 20777
+
+recording:
+  data_directory: "data"
+
+reference:
+  # Leave empty to load the newest valid same-track Parquet lap.
+  path:
+
+ui:
+  # drive | analysis | diagnostics
+  start_view: "drive"
+  dashboard_window_seconds: 20
+  drive_trace_seconds: 3
+
+  # Surface-temperature display thresholds for the compact Drive view.
+  # These are presentation warnings and can be tuned later by compound/session.
+  tyre_warning_c: 105
+  tyre_critical_c: 115
+
+overlay:
+  # Floating driver overlay. It shares the main app's UDP receiver and recorder.
+  enabled: true
+  visible_on_start: true
+
+  # Position and size in Windows desktop pixels.
+  width: 450
+  height: 250
+
+  x: 1130
+  y: 780
+
+  # 0.2 to 1.0. Click-through prevents the overlay taking mouse input.
+  opacity: 0.65
+  click_through: false
+
+  # Pedal history and redraw rate.
+  trace_seconds: 7
+  refresh_hz: 20
+
+analysis:
+  processed_directory: "data/processed"
+  expected_sample_rate_hz: 60
+  sample_rate_tolerance_hz: 7
+  minimum_rows: 1000
+  outlier_factor: 1.20
+  require_enrichment_for_training: true

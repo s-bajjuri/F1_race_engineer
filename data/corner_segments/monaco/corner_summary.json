@@ -1,0 +1,11 @@
+{
+  "track": "monaco",
+  "corners": 20,
+  "laps_selected": 14,
+  "laps_failed": 0,
+  "corner_rows": 280,
+  "behavior_complete_rows": 280,
+  "braking_complete_rows": 125,
+  "rows_with_braking": 177,
+  "failures": []
+}

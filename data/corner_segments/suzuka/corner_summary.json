@@ -1,0 +1,11 @@
+{
+  "track": "suzuka",
+  "corners": 17,
+  "laps_selected": 11,
+  "laps_failed": 0,
+  "corner_rows": 187,
+  "behavior_complete_rows": 187,
+  "braking_complete_rows": 92,
+  "rows_with_braking": 123,
+  "failures": []
+}
